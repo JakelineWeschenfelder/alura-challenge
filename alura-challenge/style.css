@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #343a40;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #f3f5fc;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.inline-pad {
+  padding-inline: 16px;
+}
+
+.main-btn {
+  background-color: #0a3871;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #0a3871;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  height: 4rem;
+  border: solid 1px #0a3871;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+header {
+  padding-block: 25px;
+}
+
+#user-input {
+  width: 100%;
+  margin-block: 3rem;
+  border: none;
+  background-color: transparent;
+  color: #0a3871;
+  font-size: 2rem;
+  resize: none;
+}
+
+#info-wrp {
+  display: flex;
+  gap: 0.4rem;
+  transition: margin-left 0.1s ease;
+}
+
+#info-wrp p {
+  font-size: 0.8rem;
+}
+
+#btn-wrp button {
+  margin-block: 15px;
+}
+
+#output-wrp-block {
+  padding: 1.8rem;
+  border-radius: 32px;
+  background-color: white;
+  box-shadow: 0 2px 35px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+#output-wrp h2 {
+  margin-bottom: 0.7rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+#out-placeholder {
+  color: #495057;
+  text-align: center;
+  line-height: 1.7rem;
+}
+
+#output {
+  color: #495057;
+  text-align: left;
+  word-break: break-all;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+
+#copy-btn {
+  display: none;
+  margin-top: 26px;
+}
+
+#desktop-img {
+  display: none;
+  aspect-ratio: 1/1;
+  background-image: url("./assets/guy-illustration.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .inline-pad {
+    padding-inline: 45px;
+  }
+
+  header {
+    padding-block: 5rem;
+  }
+
+  #btn-wrp {
+    position: fixed;
+    width: 100%;
+  }
+
+  #output-wrp {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-block: 24px;
+  }
+
+  #btn-wrp-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #btn-wrp button {
+    width: 48.5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding-block: 2rem;
+  }
+
+  #header-logo {
+    margin-inline: 2rem;
+  }
+
+  #input-wrp,
+  #btn-wrp {
+    width: 55%;
+    margin-left: 13%;
+  }
+
+  #output-wrp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 32%;
+    height: 100%;
+  }
+
+  #output-wrp-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 48px);
+    margin-top: 48px;
+  }
+
+  #desktop-img {
+    display: block;
+  }
+}

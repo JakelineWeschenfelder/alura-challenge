@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <header class="inline-pad">
+      <img id="header-logo" src="./assets/alura-logo.svg" alt="Logo da alura" />
+    </header>
+
+    <main>
+      <section id="input-wrp" class="inline-pad">
+        <textarea
+          id="user-input"
+          placeholder="Digite seu texto"
+          rows="6"
+        ></textarea>
+      </section>
+
+      <section id="btn-wrp" class="inline-pad">
+        <div id="info-wrp">
+          <img src="./assets/info-icon.svg" alt="Icone de informação" />
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div id="btn-wrp-flex">
+          <button id="encrypt-btn" class="main-btn" type="button">
+            Criptografar
+          </button>
+          <button id="decrypt-btn" class="secondary-btn" type="button">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+
+      <section id="output-wrp" class="inline-pad">
+        <div id="output-wrp-block">
+          <div id="output-replaceable">
+            <div id="desktop-img"></div>
+            <h2 class="bold">Nenhuma mensagem encontrada</h2>
+            <p id="out-placeholder">
+              Digite um texto que você queira criptografar ou descriptografar
+            </p>
+          </div>
+          <p id="output"></p>
+          <button id="copy-btn" class="secondary-btn" type="button">
+            Copiar
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
